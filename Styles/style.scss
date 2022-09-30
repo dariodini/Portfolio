@@ -1,0 +1,147 @@
+@use 'components/font-face';
+@use 'components/animations';
+@use 'components/style-mobile';
+@use 'components/style-desktop';
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    font-family: Gtwalsheimprotrial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    line-height: 20px;
+
+    h1, h2, h3, h4, h5, h6 {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 38px;
+        line-height: 44px;
+        margin-top: 20px;
+    }
+
+    h2 {
+        font-size: 35px;
+        line-height: 44px;
+        margin-top: 20px;
+    }
+
+    h3 {
+        font-size: 24px;
+        line-height: 30px;
+        margin-top: 20px;
+    }
+
+    h4 {
+        font-size: 18px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    p {
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+
+
+    nav{
+        background: rgb(0,0,0);
+        background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0.49763655462184875) 60%, rgba(0,0,0,0) 100%);
+        z-index: 999;
+        .nav-container{
+            img {
+                opacity: 0.95;
+                width: 50px;
+            }
+        }
+    }
+
+    .left-side {
+        flex: 1;
+        backface-visibility: hidden;
+        animation: 1s ease-in-out slide-from-bottom-image;
+    }
+
+    .top-title {
+        position: relative;
+        z-index: 10;
+        display: block;
+        color: hsla(0, 0%, 100%, 0.95);
+        font-size: 2em;
+        font-weight: 700;
+        animation: 1s ease-in-out slide-from-bottom;
+    }
+
+    .point {
+        color: #5f99ff;
+        animation: 1s ease-in-out slide-from-bottom;
+    }
+
+    .right-h1 {
+        position: relative;
+        z-index: 100;
+        padding-top: 29px;
+        padding-bottom: 29px;
+        font-size: 6.5em;
+        margin-top: 10px;
+        animation: 1s ease-in-out slide-from-bottom;
+
+    }
+
+    .blue-text {
+        color: #689af8;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        display: block;
+    }
+
+    .skill-right {
+        position: relative;
+        z-index: 30;
+        padding: 0 5px;
+        flex: 1;
+        animation: 1s ease-in-out slide-from-right;
+    }
+
+    .company a, a:hover, a:focus, a:active {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .experience-column{
+        .role {
+            margin-top: 8px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+        }
+
+        .date {
+            color: #6d6d6d;
+        }
+    }
+
+    .logos img{
+        width: 30px;
+    }
+
+    .email{
+        border-top: none;
+        border-left: none;
+        border-right: none;
+    }
+}
+

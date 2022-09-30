@@ -1,132 +1,201 @@
 <!DOCTYPE html>
 <html lang="it">
+
 <head>
     <meta charset="UTF-8">
     <title>Dario Di Nicuolo</title>
     <link rel="stylesheet" href="Styles/style.css">
+    <link rel="stylesheet" href="Styles/form-style.css">
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
 
-
 <body>
-<nav>
-    <div class="nav-container">
-        <img src="Logos/logo-site.svg" alt="logo" id="logo">
-    </div>
-</nav>
 
-<div class="main">
-    <div class="main-container">
-
-        <div class="left-side">
-            <div class="image-container"></div>
-        </div>
-
-        <div class="right-side">
-            <div class="top-title">Ciao, sono io</div>
-            <h1 class="right-h1">
-                Dario
-                <span class="point">.</span>
-            </h1>
-
-            <p class="right-paragraph">
-                Un entusiasta aspirante Full-stack Developer ancora in cerca del proprio stile.
-                <br>
-                Da sempre appassionato a questo mondo, non riesco a stare con le mani in mano.
-                <br>
-                Non si smette mai d'imparare, non c'è dubbio.
-            </p>
-
-            <h1 class="subtitle">
-                Full-stack
-                <br>
-                Developer
-            </h1>
-
-            <a href="#skill" class="scroll-button other">
-                SCORRI PER ALTRO
-            </a>
-        </div>
-
-    </div>
-</div>
-
-
-<div id="skill" class="skill">
-    <div class="skill-container">
-        <div class="skill-left">
-            <div class="blue-text">
-                <strong>Le mie skill</strong>
+    <div class="container" id="blur">
+        <nav>
+            <div class="nav-container">
+                <a href="#top"><img src="Logos/logo-site.svg" alt="logo" id="logo"></a>
             </div>
-            <h2>
-                Progettazione
-                <br>
-                & Realizzazione
-                <br>
-                di applicativi web
-            </h2>
-            <a href="#experience" class="scroll-button">ALTRO DA VEDERE</a>
+        </nav>
+
+        <div class="main" id="top">
+            <div class="main-container">
+
+                <div class="left-side">
+                    <div class="image-container"></div>
+                </div>
+
+                <div class="right-side">
+                    <div class="top-title">Ciao, sono io</div>
+                    <h1 class="right-h1">
+                        Dario
+                        <span class="point">.</span>
+                    </h1>
+
+                    <p class="right-paragraph">
+                        Un entusiasta aspirante Full-stack Developer ancora in cerca del proprio stile.
+                        <br>
+                        Da sempre appassionato a questo mondo, non riesco a stare con le mani in mano.
+                        <br>
+                        Non si smette mai d'imparare, non c'è dubbio.
+                    </p>
+
+                    <h1 class="subtitle">
+                        Full-stack
+                        <br>
+                        Developer
+                    </h1>
+
+                    <a href="#skill" class="scroll-button other">
+                        SCORRI PER ALTRO
+                    </a>
+                </div>
+
+            </div>
         </div>
-        <div class="skill-right">
-            <p class="skill-paragrafo">
-                Mi sto cimentando nella costruzione di pagine web interattive e intuitive dal punto di vista
-                dell’usabilità. Sono sempre alla ricerca di nuove opportunità che mi permettano di dare il massimo e
-                superare i miei limiti.
-                <br>
-                Creiamo qualcosa di fantastico insieme!
-            </p>
+
+        <div id="skill" class="skill">
+            <div class="skill-container">
+                <div class="skill-left">
+                    <div class="blue-text">
+                        <strong>Le mie skill</strong>
+                    </div>
+                    <h2>
+                        Progettazione
+                        <br>
+                        & Realizzazione
+                        <br>
+                        di applicativi web
+                    </h2>
+                    <a href="#experience" class="scroll-button">ALTRO DA VEDERE</a>
+                </div>
+                <div class="skill-right">
+                    <p class="skill-paragrafo">
+                        Mi sto cimentando nella costruzione di pagine web interattive e intuitive dal punto di vista
+                        dell’usabilità. Sono sempre alla ricerca di nuove opportunità che mi permettano di dare il massimo e
+                        superare i miei limiti.
+                        <br>
+                        Creiamo qualcosa di fantastico insieme!
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="experience" id="experience">
+            <div class="experience-container">
+                <div class="experience-title">
+                    <h2 class="experience-h1">
+                        Esperienze
+                        <span class="plus">+</span>
+                    </h2>
+                    <a href="CV.pdf" target="_blank" class="scroll-button get-cv">IL MIO CV</a>
+                </div>
+
+                <div class="experience-body">
+                    <div class="experience-column">
+                        <h3 class="company">
+                            <a href="https://www.linksmt.it/" target="_blank" rel="noopener">Links Management and Technology</a>
+                        </h3>
+                        <h1 class="role">Junior Sviluppatore Web</h1>
+                        <h1 class="role date">Maggio 2022 - Giugno 2022</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact">
+            <div class="contact-container">
+                <div class="blue-text"><strong>COSA VIENE DOPO</strong></div>
+                <h2 class="contact-txt">Lavoriamo insieme!</h2>
+                <p class="contact-paragraph">
+                    Se vuoi parlare di un progetto per il quale vuoi aiuto o hai bisogno di un consiglio su come realizzarlo,
+                    mandami una mail all'indirizzo <span class="txt-email">dariodinicuolo@gmail.com</span>.
+                </p>
+                <button class="scroll-button email" onclick="toggleFormAndBlur()">
+                    SCRIVIMI UNA MAIL
+                </button>
+            </div>
+        </div>
+
+        <div class="social">
+            <div class="social-container">
+                <a href="https://www.linkedin.com/in/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/linkedin-logo.svg" alt="logo linkedin"></a>
+                <a href="https://github.com/dariodini" target="_blank" rel=’noopener’ class="logos"><img src="Logos/github-logo.svg" alt="logo github"></a>
+                <a href="https://www.facebook.com/dariodinicuoloo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/facebook-logo.svg" alt="logo facebook"></a>
+                <a href="https://www.instagram.com/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/instagram-logo.svg" alt="logo instagram"></a>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer-container">
+                <h4 class="footer-txt">REALIZZATO CON AMORE :)</h4>
+                <img src="Logos/logo-full-site.svg" alt="logo">
+            </div>
         </div>
     </div>
-</div>
 
-<div class="experience" id="experience">
-    <div class="experience-title">
-        <h2 class="experience-h1">
-            Esperienze
-            <span class="plus">+</span>
-        </h2>
-        <a href="CV.pdf" target="_blank" class="scroll-button get-cv">IL MIO CV</a>
-    </div>
+    <div class="popup" id="popup">
 
-    <div class="experience-body">
-        <div class="experience-column">
-            <h3 class="company"><a href="https://www.linksmt.it/" target="_blank" rel="noopener">Links Management and
-                Technology</a></h3>
-            <h1 class="role">Junior Sviluppatore Web</h1>
-            <h1 class="role date">Maggio 2022 - Giugno 2022</h1>
+        <div class="side left-popup">
+            <div class="informazioni">
+                <div class="titolo">
+                    Contattami
+                </div>
+                <div class="descrizione">
+                    Sarò felice di ascoltare ciò che hai da dirmi.
+                    <br>
+                    Ti risponderò il prima possibile
+                </div>
+            </div>
+
+            <div class="form-popup">
+                <form action="">
+                    <input type="text" placeholder="Nome" name="nome">
+                    <input type="email" placeholder="Email" name="email">
+                    <input type="text" placeholder="Messaggio" name="messaggio">
+                    <div class="submit-button" id="submit-button-email">
+                        <input type="submit" id="bottone-invia" value="Invia" onmouseenter="toggleArrow()" onmouseleave="toggleArrow()">
+                        <img src="Logos/right-arrow.svg" class="freccia" id="arrow" alt="logo freccia">
+                    </div>
+                </form>
+            </div>
         </div>
-    </div>
-</div>
 
-<div class="contact">
-    <div class="contact-container">
-        <div class="blue-text"><strong>COSA VIENE DOPO</strong></div>
-        <h2 class="contact-txt">Lavoriamo insieme!</h2>
-        <p class="contact-paragraph">
-            Se vuoi parlare di un progetto per il quale vuoi aiuto o hai bisogno di un consiglio su come realizzarlo,
-            mandami una mail all'indirizzo <span class="txt_email">dariodinicuolo@gmail.com</span>.
-        </p>
-        <a class="scroll-button email" href="mailto:dariodinicuolo@gmail.com">
-            SCRIVIMI UNA MAIL
-        </a>
-    </div>
-</div>
+        <div class="close" onclick="toggleFormAndBlur()">+</div>
 
-<div class="social">
-    <div class="social-container">
-        <a href="https://www.linkedin.com/in/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/linkedin-logo.svg" alt="logo linkedin"></a>
-        <a href="https://github.com/dariodini" target="_blank" rel=’noopener’ class="logos"><img src="Logos/github-logo.svg" alt="logo github"></a>
-        <a href="https://www.facebook.com/dariodinicuoloo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/facebook-logo.svg" alt="logo facebook"></a>
-        <a href="https://www.instagram.com/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/instagram-logo.svg" alt="logo instagram"></a>
-    </div>
-</div>
+        <div class="side right-popup">
 
-<div class="footer">
-    <div class="footer-container">
-        <h4 class="footer-txt">REALIZZATO CON AMORE :)</h4>
-        <img src="Logos/logo-full-site.svg" alt="logo">
+            <div class="dont-forget">
+                <div class="titolo">Collegati</div>
+                <div class="descrizione">Non scordarti di seguirmi anche sui miei social!</div>
+
+                <div class="social-logos">
+                    <a href="https://www.linkedin.com/in/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/linkedin-logo.svg" alt="logo linkedin"></a>
+                    <a href="https://github.com/dariodini" target="_blank" rel=’noopener’ class="logos"><img src="Logos/github-logo.svg" alt="logo github"></a>
+                    <a href="https://www.facebook.com/dariodinicuoloo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/facebook-logo.svg" alt="logo facebook"></a>
+                    <a href="https://www.instagram.com/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/instagram-logo.svg" alt="logo instagram"></a>
+                </div>
+            </div>
+        </div>
+
     </div>
-</div>
+
+    <script>
+        function toggleFormAndBlur() {
+            let popup = document.getElementById("popup");
+            popup.classList.toggle("active");
+            let blur = document.getElementById("blur");
+            blur.classList.toggle("active");
+        }
+
+        function toggleArrow() {
+            let arrow = document.getElementById("arrow");
+            arrow.classList.toggle("visible-arrow");
+        }
+
+
+    </script>
+
 </body>
 </html>

@@ -1,0 +1,81 @@
+@keyframes slide-from-left {
+    from {
+        transform: translateX(-15%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-from-right {
+    from {
+        transform: translateX(25%);
+        opacity: 15%;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-from-bottom {
+    from {
+        transform: translateY(+100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 100%;
+    }
+}
+
+@keyframes slide-from-bottom-image {
+    from {
+        transform: translateY(+10%) scale(0.9);
+        opacity: 10%;
+    }
+    to {
+        transform: translateY(0) scale(1.0);
+        opacity: 100%;
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 100%;
+    }
+}
+
+@keyframes move-background {
+    from {
+        background-position: 35% 47%;
+        opacity: 10%;
+    }
+    to {
+        background-position: 50% 47%;
+        opacity: 100%;
+    }
+}
+
+@keyframes appear-from-top {
+    from {
+        transform: translateY(-100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes appear-from-bottom {
+    from {
+        transform: translateY(+100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
