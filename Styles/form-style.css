@@ -6,6 +6,7 @@
     padding: 8vw 5vw;
     border-radius: 1vw;
     opacity: 0;
+    visibility: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -56,8 +57,11 @@
   .popup .left-popup .form-popup form .submit-button {
     width: 100%;
   }
-  .popup .left-popup .form-popup form .submit-button .freccia {
-    display: none;
+  .popup .left-popup .form-popup .alert {
+    font-size: 4vw;
+    border-radius: 0.8vw;
+    margin-top: -3vw;
+    padding: 2.5vw 3vw;
   }
   .popup .close {
     font-size: 10vw;
@@ -104,7 +108,7 @@
     left: 0px;
     z-index: -1;
     opacity: 0.1;
-    background-image: url("../Logos/provalogo.svg");
+    background-image: url("../Logos/logo-full-name-grey.svg");
     background-size: 70%;
     background-repeat: no-repeat;
     background-position-x: 10%;
@@ -168,12 +172,9 @@
     position: relative;
     transition: all 200ms ease-in-out;
   }
-  .popup .left-popup .form-popup form .submit-button .freccia {
-    position: absolute;
-    top: 17%;
-    right: 38%;
-    width: 0.9vw;
-    visibility: hidden;
+  .popup .left-popup .form-popup .alert {
+    font-size: 1.1vw;
+    padding: 0.9vw 2vw 0.9vw 1vw;
   }
   .popup .close {
     font-size: 2vw;
@@ -224,10 +225,6 @@
     width: 1.5vw;
   }
 }
-.visible-arrow {
-  visibility: visible;
-}
-
 #blur.active {
   filter: blur(20px);
   pointer-events: none;
@@ -239,7 +236,22 @@
   top: 50%;
   visibility: visible;
   opacity: 1;
-  transition: 0.5s ease-in-out;
+  transition: 1s ease-in-out;
+}
+
+.alert {
+  display: none;
+  opacity: 0;
+  position: relative;
+  border-radius: 0.1vw;
+  font-weight: 500;
+  color: #842029;
+  background-color: #ebc8c4;
+}
+
+.active-alert {
+  display: block;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=form-style.css.map */

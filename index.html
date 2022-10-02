@@ -6,6 +6,7 @@
     <title>Dario Di Nicuolo</title>
     <link rel="stylesheet" href="Styles/style.css">
     <link rel="stylesheet" href="Styles/form-style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <link rel="shortcut icon" type="image/jpg" href="favicon.ico"/>
     <meta content="width=device-width, initial-scale=1" name="viewport">
 </head>
@@ -110,7 +111,7 @@
                 <h2 class="contact-txt">Lavoriamo insieme!</h2>
                 <p class="contact-paragraph">
                     Se vuoi parlare di un progetto per il quale vuoi aiuto o hai bisogno di un consiglio su come realizzarlo,
-                    mandami una mail all'indirizzo <span class="txt-email">dariodinicuolo@gmail.com</span>.
+                    mandami una mail.
                 </p>
                 <button class="scroll-button email" onclick="toggleFormAndBlur()">
                     SCRIVIMI UNA MAIL
@@ -133,6 +134,11 @@
                 <img src="Logos/logo-full-site.svg" alt="logo">
             </div>
         </div>
+
+
+
+        <div class="success" id="success">L'email è stata inviata con successo!</div>
+
     </div>
 
     <div class="popup" id="popup">
@@ -150,19 +156,19 @@
             </div>
 
             <div class="form-popup">
-                <form action="">
-                    <input type="text" placeholder="Nome" name="nome">
-                    <input type="email" placeholder="Email" name="email">
-                    <input type="text" placeholder="Messaggio" name="messaggio">
+                <form method="post">
+                    <input type="text" required placeholder="Nome*" id="form-nome" name="nome">
+                    <input type="email" required placeholder="Email*" id="form-email" name="email">
+                    <input type="text" required placeholder="Messaggio*" id="form-messaggio" name="messaggio">
                     <div class="submit-button" id="submit-button-email">
-                        <input type="submit" id="bottone-invia" value="Invia" onmouseenter="toggleArrow()" onmouseleave="toggleArrow()">
-                        <img src="Logos/right-arrow.svg" class="freccia" id="arrow" alt="logo freccia">
+                        <input type="submit" id="bottone-invia" value="Invia">
                     </div>
                 </form>
+                <div class="alert" id="alert">Inserisci correttamente tutti i dati *</div>
             </div>
         </div>
 
-        <div class="close" onclick="toggleFormAndBlur()">+</div>
+        <div class="close" id="close">+</div>
 
         <div class="side right-popup">
 
@@ -177,25 +183,10 @@
                     <a href="https://www.instagram.com/dariodinicuolo/" target="_blank" rel=’noopener’ class="logos"><img src="Logos/instagram-logo.svg" alt="logo instagram"></a>
                 </div>
             </div>
-        </div>
 
+        </div>
     </div>
 
-    <script>
-        function toggleFormAndBlur() {
-            let popup = document.getElementById("popup");
-            popup.classList.toggle("active");
-            let blur = document.getElementById("blur");
-            blur.classList.toggle("active");
-        }
-
-        function toggleArrow() {
-            let arrow = document.getElementById("arrow");
-            arrow.classList.toggle("visible-arrow");
-        }
-
-
-    </script>
-
+    <script src="app.js"></script>
 </body>
 </html>

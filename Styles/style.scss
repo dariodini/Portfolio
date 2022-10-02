@@ -4,7 +4,6 @@
 @use 'components/style-desktop';
 
 
-
 * {
     padding: 0;
     margin: 0;
@@ -142,6 +141,30 @@ body {
         border-top: none;
         border-left: none;
         border-right: none;
+    }
+
+
+
+
+    .success{
+        display: none;
+        opacity: 0;
+
+        border-left: 5px solid #006b00;
+        border-radius: 0.4vw;
+        color: #006b00;
+        background-color: #d1e7dd;
+        font-weight: 400;
+
+        position: fixed;
+        right: 5%;
+    }
+
+    .active-success{
+        animation: drop-in-fade-out 5s cubic-bezier(.32,1.75,.65,.91);
+
+        display: block;
+        opacity: 1;
     }
 }
 
