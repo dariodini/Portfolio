@@ -10,6 +10,12 @@ Per quanto riguarda il form di contatto ho fatto del mio meglio per crearne uno,
 (servizio che tra l'altro non conoscevo), quindi ora mi potranno contattare tranquillamente da quello.
 E dal momento che mi sembrava brutto lasciarlo troppo semplice e senza animazioni, ho cercato di crearne qualcuna utilizzando Javascript, che già stavo studiando.
 
+
+Per quanto riguarda GitHub Pages, avevo gia messo il tutto all'interno di una repository,
+quindi mi è bastato solamente attivare Pages, adesso il sito si trova qui: https://dariodini.github.io/Portfolio/
+Comunque sia, volevo dirti che per conto mio avevo comprato gia un dominio, https://dariodinicuolo.it infatti il sito lo si puo trovare anche qui.
+
+
 Spero di essere riuscito a soddisfare le tue richieste, rimango in attesa di un tuo riscontro :)
 
 Grazie.
